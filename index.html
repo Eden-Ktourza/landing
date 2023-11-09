@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Plate For Your Place</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <style>
+    .banner {
+      background: black; 
+      color: white; 
+      padding: 20px; 
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Collections</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="banner">
+    <div class="container">
+      <h1>PLATE FOR YOUR PLACE</h1>
+      <h2>Find the latest tableware trends!</h2>
+      <a href="#" id="discover-btn" style="background: white; color: black; padding: 10px 20px; display: inline-block; text-decoration: none;">Discover Now</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>Collections</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="images/carditaly.png" alt="Italy Collection">
+        <h3>Italy Collection</h3>
+      </div>
+      <div class="card">
+        <img src="images/morroccancard.png" alt="Moroccan Collection">
+        <h3>Moroccan Collection</h3>
+      </div>
+      <div class="card">
+        <img src="images/japanesecard.png" alt="Japanese Collection">
+        <h3>Japanese Collection</h3>
+      </div>
+    </div>
+  </div>
+
+  <div data-tf-live="01HEREH4DE9JTZS1B40PZ9RNH3"></div>
+  <script src="//embed.typeform.com/next/embed.js"></script>
+
+  <footer>
+   Find us on Instagram
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const discoverButton = document.getElementById("discover-btn");
+      const typeformContainer = document.querySelector(".typeform");
+
+      discoverButton.addEventListener("click", function (event) {
+        event.preventDefault();
+        typeformContainer.style.display = "block";
+      });
+    });
+  </script>
+</body>
+</html>
+
+
